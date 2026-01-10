@@ -23,9 +23,9 @@ void interface_game() {
     std::cout<<"|"<<std::string(2,' ')<<"3) Правила игры "<<std::string(2,' ')<<"|"<<std::endl;
     std::cout<<std::string(20,'-')<<std::endl;
 
-    std::cout<<std::string(13,'-')<<std::endl;
+    std::cout<<std::string(19,'-')<<std::endl;
     std::cout<<"|"<<std::string(2,' ')<<"4) Выход 【⏻】"<<std::string(2,' ')<<"|"<<std::string(2,' ')<<std::endl;
-    std::cout<<std::string(13,'-')<<std::endl;
+    std::cout<<std::string(19,'-')<<std::endl;
 }
 
 //Правила игры
@@ -270,3 +270,4 @@ void two_players_game() {
     std::cout<<"Количество попыток: "<<attempt_counter<<std::endl;
     log_to_file("Попытки: " + std::to_string(attempt_counter));
 }
+
