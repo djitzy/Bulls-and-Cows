@@ -21,6 +21,8 @@ int main() {
         switch (choice) {
             case (1): {
                 game_with_computer();
+                std::cout<<"Возврат в главное меню..."<<std::endl;
+                Sleep(1500); 
                 std::cout<<std::endl;
                 interface_game();
                 break;
@@ -28,6 +30,8 @@ int main() {
 
             case (2): {
                 two_players_game();
+                std::cout<<"Возврат в главное меню..."<<std::endl;
+                Sleep(1500);
                 std::cout<<std::endl;
                 interface_game();
                 break;
@@ -35,6 +39,8 @@ int main() {
 
             case (3): {
                 rules_game();
+                std::cout<<"Возврат в главное меню..."<<std::endl;
+                Sleep(1500);
                 interface_game();
                 break;
             }
