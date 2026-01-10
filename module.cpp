@@ -30,7 +30,7 @@ void interface_game() {
 
 //Правила игры
 void rules_game() {
-
+    std::cout<<"~~~~~Правила игры~~~~~\n"<<std::endl;
     std::cout<<"Быки и коровы - логическая игра, в ходе которой игрок должен отгадать \nзадуманное 4-значное число.\n"<<std::endl;
     std::cout<<"Попытка - это 4-значное число с неповторяющимися цифрами, \nсообщаемое пользователю.\n"<<std::endl;
     std::cout<<"Есть два режима для игры: \n";
@@ -151,6 +151,7 @@ void game_with_computer() {
     std::vector<int> guess;
 
     std::cout<<"~~~~~~~Игра «Быки и коровы»~~~~~~~"<<std::endl;
+    std::cout<<"~~~~~Режим игры с компьютером~~~~~"<<std::endl;
     std::cout<<"Загадано 4-значное число без повторений\n"<<std::endl;
 
     int bulls = 0, cows = 0;
@@ -213,6 +214,7 @@ void two_players_game() {
     std::string input;
 
     std::cout<<"~~~~~~~Игра «Быки и коровы»~~~~~~~"<<std::endl;
+    td::cout<<"~~~~Режим игры для двух игроков~~~~"<<std::endl;
     std::cout<<"Очередь Игрока 1"<<std::endl;
     while (!hidden_input_number(secret, length)) {
         std::cout<<"Попробуйте еще раз"<<std::endl;
@@ -270,4 +272,5 @@ void two_players_game() {
     std::cout<<"Количество попыток: "<<attempt_counter<<std::endl;
     log_to_file("Попытки: " + std::to_string(attempt_counter));
 }
+
 
