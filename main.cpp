@@ -44,6 +44,13 @@ int main() {
                 interface_game();
                 break;
             }
+            
+            case(4): {
+                std::cout<<"Завершение работы..."<<std::endl;
+                Sleep(1000);
+                std::cout<<"Работа завершена. Ждем вас снова в нашей игре)"<<std::endl;
+                break;
+            }
 
             default: {
                 break;
