@@ -9,7 +9,7 @@ int main() {
     interface_game();
     int choice=0;
     while (choice < 4) {
-        std::cout<<"Ваш выбор: ";
+        std::cout<<"Ваш выбор (0-4): ";
         std::cin>>choice;
 
         //проверка, что в переменную choice введены только числа
