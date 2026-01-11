@@ -150,7 +150,7 @@ void game_with_computer() {
     std::vector<int> secret_number = generate_secret_number(length);
     std::vector<int> guess;
 
-    std::cout<<"~~~~~~~Игра «Быки и коровы»~~~~~~~"<<std::endl;
+    std::cout<<"~~~~~~~Игра «Быки и Коровы»~~~~~~~"<<std::endl;
     std::cout<<"~~~~~Режим игры с компьютером~~~~~"<<std::endl;
     std::cout<<"Загадано 4-значное число без повторений\n"<<std::endl;
 
@@ -213,7 +213,7 @@ void two_players_game() {
     std::vector<int> guess;
     std::string input;
 
-    std::cout<<"~~~~~~~Игра «Быки и коровы»~~~~~~~"<<std::endl;
+    std::cout<<"~~~~~~~Игра «Быки и Коровы»~~~~~~~"<<std::endl;
     td::cout<<"~~~~Режим игры для двух игроков~~~~"<<std::endl;
     std::cout<<"Очередь Игрока 1"<<std::endl;
     while (!hidden_input_number(secret, length)) {
@@ -273,6 +273,7 @@ void two_players_game() {
     std::cout<<"Количество попыток: "<<attempt_counter<<std::endl;
     log_to_file("Попытки: " + std::to_string(attempt_counter));
 }
+
 
 
 
