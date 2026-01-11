@@ -14,7 +14,6 @@ int main() {
 
         //проверка, что в переменную choice введены только числа
         if (std::cin.fail()) {
-            std::cout<<"Ошибка! Введите число.\n"<<std::endl;
             std::cin.clear();
             std::cin.ignore(10000, '\n');
         }
@@ -53,6 +52,7 @@ int main() {
             }
 
             default: {
+                std::cout<<"Ошибка! Введите число от 1 до 4!\n"<<std::endl;
                 break;
             }
         }
