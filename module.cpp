@@ -1,4 +1,4 @@
-#include <algorithm>
+    #include <algorithm>
 #include <iostream>
 #include <windows.h>
 #include <vector>
@@ -219,7 +219,8 @@ void two_players_game() {
     while (!hidden_input_number(secret, length)) {
         std::cout<<"Попробуйте еще раз"<<std::endl;
     }
-
+    
+    std::cout<<"Число принято!"<<std::endl;
     std::cout<<std::string(50,'\n');
 
     std::cout<<"Число загадано. Игрок 2, угадывайте!"<<std::endl;
@@ -272,6 +273,7 @@ void two_players_game() {
     std::cout<<"Количество попыток: "<<attempt_counter<<std::endl;
     log_to_file("Попытки: " + std::to_string(attempt_counter));
 }
+
 
 
 
