@@ -5,10 +5,10 @@
 int main() {
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
-    std::cout<<"~~~~~~~Игра «Быки и коровы»~~~~~~~"<<std::endl;
+    std::cout<<"~~~~~~~Игра «Быки и Коровы»~~~~~~~"<<std::endl;
     interface_game();
     int choice=0;
-    while (choice < 4 || choice => 4) {
+    while (choice < 4 || choice > 4) {
         std::cout<<"Ваш выбор (0-4): ";
         std::cin>>choice;
 
