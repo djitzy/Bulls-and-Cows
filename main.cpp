@@ -8,7 +8,7 @@ int main() {
     std::cout<<"~~~~~~~Игра «Быки и коровы»~~~~~~~"<<std::endl;
     interface_game();
     int choice=0;
-    while (choice < 4) {
+    while (choice < 4 || choice => 4) {
         std::cout<<"Ваш выбор (0-4): ";
         std::cin>>choice;
 
