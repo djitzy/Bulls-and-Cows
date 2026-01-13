@@ -50,11 +50,9 @@ std::vector<int> generate_secret_number(int length) {
     std::vector<int> digits {0,1,2,3,4,5,6,7,8,9};
     std::vector<int> secret_number;
 
-    std::srand(std::time(nullptr));
     //генератор случайных чисел, без повторяющихся чисел
     std::random_device rd;
     std::mt19937 gen(rd());
-
     std::shuffle(digits.begin(), digits.end(), gen);
 
     for (int i = 0; i < length; i++) {
@@ -273,6 +271,7 @@ void two_players_game() {
     std::cout<<"Количество попыток: "<<attempt_counter<<std::endl;
     log_to_file("Попытки: " + std::to_string(attempt_counter));
 }
+
 
 
 
